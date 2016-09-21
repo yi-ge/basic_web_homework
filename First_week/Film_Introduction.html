@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Film Introduction</title>
+</head>
+<body>
+<h2>琅琊榜大结局预告片</h2>
+<div id="jp_container_1">
+    <a href="#" class="jp-play">Play</a>
+    <a href="#" class="jp-pause">Pause</a>
+</div>
+<div id="jquery_jplayer_1"></div>
+<h2>《招魂2》、《爱宠大机密》影评</h2>
+<embed src='http://player.youku.com/player.php/sid/XMTcyNzM2NjM2MA==/v.swf' allowFullScreen='true' quality='high'
+       width='480' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
+<h2>《谍影重重5》影评</h2>
+<embed src='http://player.youku.com/player.php/sid/XMTcxOTQ2OTA4NA==/v.swf' allowFullScreen='true' quality='high'
+       width='480' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
+<h2>《w两个世界》、《封神传奇》影评</h2>
+<embed src='http://player.youku.com/player.php/sid/XMTcxMDUzOTI4NA==/v.swf' allowFullScreen='true' quality='high'
+       width='480' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
+<h2>《陆垚知马俐》影评</h2>
+<embed src='http://player.youku.com/player.php/sid/XMTcwMDg3MTY2NA==/v.swf' allowFullScreen='true' quality='high'
+       width='480' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
+<h2>《致青春》、《完美陌生人》影评</h2>
+<embed src='http://player.youku.com/player.php/sid/XMTY5MTAzNzExNg==/v.swf' allowFullScreen='true' quality='high'
+       width='480' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
+<h2>《青云志》、《神医喜来乐》影评</h2>
+<embed src='http://player.youku.com/player.php/sid/XMTY4MTcyNDI0MA==/v.swf' allowFullScreen='true' quality='high'
+       width='480' height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/jPlayer/dist/jplayer/jquery.jplayer.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#jquery_jplayer_1").jPlayer({
+            ready: function () {
+                $(this).jPlayer("setMedia", {
+                    flv: "movies/琅琊榜大结局预告片.flv"
+                });
+            },
+            swfPath: "bower_components/jPlayer/dist/jplayer",
+            supplied: "flv"
+        });
+    });
+</script>
+</body>
+</html>
